@@ -10,7 +10,7 @@ header nav ul li, header h1 {margin: 20px;}
 
 .bg-white{background-color: white}
 .bg-gray{background-color: gray}
-.bg-black{background-color: black}
+.bg-black{background-color: #2B2B2B}
 
 
 body{
@@ -156,7 +156,7 @@ a {
 /*---------- END HEADER -------------------*/
 
 
-/*------------------------------------------------------- BANNER LANDING ------------------------------------------------*/
+/*-------------------------------------------------------SECTION 1 BANNER LANDING ------------------------------------------------*/
 
 /*------ EFFECT MAIN TITLE ------------*/
   .text-focus-in {
@@ -277,100 +277,98 @@ a.scroll{
 
 
 
-/*---------SECTION DEV ----------*/
+/*--------------------------------------------- SECTION 2 ABOUT ME --------------------------------------------*/
 
-section.flex-row.bg-gray.dev{
-    width:100% ;
-    height: 20vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: rgb(43, 43, 43);
+section#about{
+  background-color: rgb(43, 43, 43);
+  padding: 90px 0 90px 0;
+  overflow: hidden;
+}
+
+
+section.bg-black.row{
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+div.profile-img{
+  width: 30%;
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
 }
 
 img.profile-pic{
-  
-    position: relative;
-    width: 140px;
-    height: 150px;
-    object-fit: scale-down;
-  
-}
-div.actuel.dev{
   position: relative;
-  top: 10em;
+  left: 100px;
+  width: 150px;
+  height: 160px;
+  border-radius: 100%;
+  background: white;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+div.about.text{
+  padding: 0 20px;
+  min-height: 1px; 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+
+}
+#about h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#about p{
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  color: #7A7A7A;
+}
+
+div.download{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  margin: 30px;
 
+}
+
+a.button{
+background-color:#444;
+border-radius: 5px ;
+padding:12px 20px;
+text-decoration: none;
+}
+
+i.fa.fa-download{
+  margin-right: 10px;
+}
+
+div.download.img{
+  width: 20%;
+}
+
+img.img.deco{
+  width: 200px;
+  height: 150px;
 }
 
 
 
-section.flex-row.bg-gray.actuel.dev{
-    height: 70vh;
-    display: flex;
-    justify-content: space-around;
-    align-items:flex-start;
-    background-color: rgb(43, 43, 43);
-
-}
-
-h2.dev{
-    margin-left:100px;
-    margin-top: 50px;
-    font-size: 4em;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: 0.5em;
-    color:#8e8e8e95;
-    padding: 20px;    
-}
 
 
-div#slide-left.dev{
-  position: absolute;
-    right: -700px;
-    /*width: 100px;
-    height: 100px;
-    background: blue;*/
-    -webkit-animation: slideleft 0.5s forwards;
-    -webkit-animation-delay: 1s;
-    animation: slideleft 1s forwards;
-    animation-delay: 0.5s;
-}
-
-@keyframes slideleft {
-  100% { right: 0px; }
- 0% { left: -100%; }
-  
-}
-
-p.flex-row.actuel{
-    position: relative;
-    bottom: 5em;
-    left:7.3em;
-    padding:20px;
-    font-size: 1.5em;
-    color: rgb(201, 201, 201);
-    letter-spacing: 0.2em;
-}
-
-p.text.dev{ 
-    margin-bottom: 20px;
-    font-size: 0.8em;
-    letter-spacing: 0.2em;
-    font-weight: 700;
-    color: whitesmoke;
-}
-
-img.dev{
-    position: relative;
-    top: 3em;
-    width: 30vh;
-    height: 50vh;
-}
 
 
 /*------------- SECTION EXPERT ---------*/
