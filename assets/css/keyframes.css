@@ -1,0 +1,243 @@
+
+
+/*------------------- SECTION BANNER EFFECT MAIN TITLE -----------------*/
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+  
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/*------ END EFFECT MAIN TITLE ------------*/ 
+
+
+
+/*--------------------------------- KEYFRAMES COMPÉTENCES --------------------------*/
+.html{
+    width: 75%;
+    animation: html 2s ease;
+    -webkit-animation: html 2s ease;
+    animation: html 2s ease ;
+  }
+  
+.css{
+  width: 55%;
+  animation: css 2s ease;
+  -webkit-animation: css 2s ease;
+  animation: css 2s ease ;
+}
+
+.js{
+  width: 45%;
+  animation: js 2s ease;
+  -webkit-animation: js 2s ease;
+  animation: js 2s ease ;
+}
+
+.react{
+  width: 30%;
+  animation: react 2s ease;
+  -webkit-animation: react 2s ease;
+  animation: react 2s ease ;
+}
+
+.php{
+  width: 40%;
+  animation: php 2s ease;
+  -webkit-animation: php 2s ease;
+  animation: php 2s ease ;
+}
+
+.cms{
+  width: 90%;
+  animation: cms 2s ease;
+  -webkit-animation: cms 2s ease;
+  animation: cms 2s ease ;
+
+}
+
+@keyframes html {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+
+@-webkit-keyframes html{
+  0%   { width: 0px;  }
+  100% { width: 75%; }
+} 
+
+@keyframes css {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes css{
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+
+@keyframes js {
+  0%   { width: 0px;  }
+  100% { width: 45%;  }
+}
+
+@-webkit-keyframes js{
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+
+@keyframes react {
+  0%   { width: 0px;  }
+  100% { width: 30%;  }
+}
+
+@-webkit-keyframes react{
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+
+@keyframes  php {
+  0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+
+@-webkit-keyframes php{
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+
+@keyframes cms {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+
+@-webkit-keyframes cms{
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+
+
+.mac{
+  width: 90%;
+  animation: mac 2s ease;
+  -webkit-animation: mac 2s ease;
+  animation: mac 2s ease ;
+}
+
+.visual{
+  width: 60%;
+  animation: visual 2s ease;
+  -webkit-animation: visual 2s ease;
+  animation: visual 2s ease ;
+}
+
+.git{
+  width: 70%;
+ animation: git 2s ease;
+  -webkit-animation: git 2s ease;
+  animation: git 2s ease ;
+}
+
+.mamp{
+  width: 90%;
+  animation: mamp 2s ease;
+  -webkit-animation: mamp 2s ease;
+  animation: mamp 2s ease ;
+}
+
+.phpmyadmin{
+  width: 70%;
+  animation: phpmyadmin 2s ease;
+  -webkit-animation: phpmyadmin 2s ease;
+  animation: phpmyadmin 2s ease ;
+}
+
+.gatsby{
+  width: 20%;
+  animation: gatby 2s ease;
+  -webkit-animation: gatsby 2s ease;
+  animation: gatsby 2s ease ;
+}
+
+@keyframes mac {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+
+@-webkit-keyframes mac {
+  0%   { width: 0px;  }
+  100% { width: 90%; }
+} 
+
+@keyframes visual {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+
+@-webkit-keyframes visual {
+  0%   { width: 0px;  }
+  100% { width: 60%; }
+} 
+
+@keyframes git {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+
+@-webkit-keyframes git {
+  0%   { width: 0px;  }
+  100% { width: 70%; }
+} 
+
+@keyframes mamp {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+
+@-webkit-keyframes mamp {
+  0%   { width: 0px;  }
+  100% { width: 90%; }
+} 
+
+@keyframes phpmyadmin {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+
+@-webkit-keyframes phpmyadmin {
+  0%   { width: 0px;  }
+  100% { width: 70%; }
+} 
+
+@keyframes gatsby {
+  0%   { width: 0px;  }
+  100% { width: 20%;  }
+}
+
+@-webkit-keyframes gatsby {
+  0%   { width: 0px;  }
+  100% { width: 20%; }
+} 
+  
