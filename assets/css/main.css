@@ -1,5 +1,5 @@
 /*RESET*/
-*{margin:0;padding:0}
+/**{margin:0;padding:0}*/
 header{justify-content: space-between}
 header nav ul li, header h1 {margin: 20px;}
 
@@ -18,142 +18,119 @@ body{
     width: 100%;
 }
 
-/*---------- HEADER NAV ----------------*/
+/*---------- NAVBAR ----------------*/
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: teal;
+  font-family: 'Poppins', sans-serif;
+}
 
-a {
-  font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
-    font-weight: 700;
-    color: #fff;
+.logo{
+  color: rgb(228, 228, 228);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links li{
+  list-style: none;
+
+}
+
+.nav-links a{
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:rgb(225, 225, 225);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+    width: 60%;
   }
-  
-  /* header */
-  
-  .header {
-   
-    background-color: #373c3f;
-    background: transparent;
-    box-shadow: 1px 1px 4px 0 rgba(198, 196, 196, 0.66);
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    z-index: 3;
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
   }
 
-  header.header{
-    background-color: #373c3f;
-
-  }
-  
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #373c3f;
-  
-   
-  }
-  
-  .header li a {
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
-  }
-  
-  .header li a:hover,
-  .header .menu-btn:hover {
-    background-color: #616365;
-  }
-  
-  .header.logo {
-    display: block;
-
-    float: left;
-    align-items: center;
-    font-size: 1.5em;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
-  
-  /* menu */
-  
-  .header.menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-  .header.menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float:right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .header.menu-icon .navicon {
-    background: #373c3f;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-    background:  #373c3f;
-    content: '';
-    display: block;
-    height: 100%;
+  .nav-links{
     position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
-  
-  .header .menu-icon .navicon:before {
-    top: 5px;
+  .nav-links li{
+    opacity: 1;
   }
-  
-  .header .menu-icon .navicon:after {
-    top: -5px;
+  .burger{
+    display: block;
   }
-  
-  /* menu btn */
-  
-  .header .menu-btn {
-    display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
-    max-height: 270px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-  
-  
-  /* ----END NAVBAR RESPONSIVE---- */
+ 
+}
+.nav-active{
+  transform: translateX(0%);
+}
 
-/*---------- END HEADER -------------------*/
+@keyframes navLinksFade{
+  from{
+    opacity:0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,7px);
+
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-7px);
+  
+}
+
+ 
+
+/* --------END NAVBAR RESPONSIVE----------- */
+
+
 
 
 /*------------------------------------ SECTION 1 BANNER LANDING ------------------------------------------------*/
@@ -222,19 +199,18 @@ ul.flex-row.banner-social{
 }
 
 i.fab.fa-linkedin-in{
-  color:rgba(0, 0, 0, 0.523);
+  color:rgba(140, 140, 140, 0.899);
 }
 
-i.fab.fa-facebook-f{
-  color:rgba(0, 0, 0, 0.523);
-}
+
 
 i.fab.fa-github{
-  color:rgba(0, 0, 0, 0.523);
+  color:rgba(140, 140, 140, 0.899);
 }
 
+
 i.fas.fa-globe{
-  color:rgba(0, 0, 0, 0.523);
+  color:rgba(140, 140, 140, 0.899);
 }
 
 a.scroll{
@@ -243,7 +219,7 @@ a.scroll{
   font-size: 1em;
 }
 
-a:hover{
+a.linkedin.github.mail:hover{
   color: rgb(28, 95, 196);
   cursor: pointer;
 }
@@ -274,7 +250,8 @@ div.profile-img{
 
 img.profile-pic{
   position: relative;
-  left: 100px;
+  right: 20px;
+  top:40px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
@@ -284,9 +261,11 @@ img.profile-pic{
 
 img{
   max-width: 100%;
+  
 }
 
 div.about.text{
+  
   background-color: rgba(13, 69, 152, 0.356);
   border-radius: 5px;
   padding: 20px;
@@ -352,21 +331,33 @@ div.resume-img{
   justify-content: center;
   align-items: center;
   margin: 50px 0 150px 0;
+
 }
 
 img.resume{
   width: 40%;
   z-index: 1;
+  position: relative;
+  left: 50px;
+  bottom: 50px;
+}
+
+img.code{
+  width: 20%;
+  z-index: 2;
+  position: relative;
+  right: 100px;
+  top:100px
 }
 
 #rectangle1{
   width: 40vw;
-  height: 25vh;
+  height: 20vh;
   background-color: darkgray;
   opacity: 0.5;
   position: relative;
   top: 180px;
-  right: 150px
+  right: 100px
   
   
 }
@@ -550,12 +541,11 @@ p.comp-text{
 hr{
   width:100%
 }
-/* --------------------------------- MY WORKS -----------------------*/
+/* --------------------------------- MES TRAVAUX -----------------------*/
 
 section.flex-row.works{
-  padding: 0 0 70px 0;
   justify-content: center;
-  background-color:  rgb(43, 43, 43);
+  background-color:  rgba(80, 80, 80, 0.79);
 }
 
 
@@ -565,9 +555,7 @@ div.flex-row.main-cards{
   margin:70px
 }
 
-div.works-title{
-  
-}
+
 
 h2.works-txt{
   font-size: 1.2em;
@@ -609,7 +597,6 @@ h2.works-txt{
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  
   cursor: pointer;
 }
 
@@ -675,54 +662,235 @@ a.card:hover{
 }
 
 
-
-
-/* ---------------  CONTACT -------------*/
+/* ----------------------- SECTION CONTACT -----------------------------*/
 
 section#contact{
   background: #191919;
-  padding-top: 96px;
+  padding-top: 50px;
   padding-bottom: 102px;
   color: #636363;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-div.flex-row.head{
-  display: flex;
-  flex-direction: row;
+div.row{
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+form#contactForm{
+  margin-bottom: 30px;
+}
+
+#contact label{
+  font: 15px/24px 'opensans-bold', sans-serif;
+  letter-spacing: 0.3em;
+    margin: 12px 0;
+    color: #EBEEEE;
+    /*display: inline-block;*/
+    float: left;
+    width: 15%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+input[type="text"]{
+  margin: 0 0 24px 0;
+  vertical-align: middle;
+    min-width: 225px;
+    max-width: 100%;
+}
+
+#contact input{
+  padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 65%;
+}
+
+#contact textarea{
+  padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 65%;
+    min-height: 220px;
+    vertical-align: middle;
+    min-width: 225px;
+    max-width: 100%;
+    
+}
+
+#contact button.submit{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.4em;
+  background: #0D0D0D;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 15%;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+
+}
+
+h2.contact-title{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 6px;
+  padding-top: 10px;
+  margin: 30px 0 80px 0;
+  letter-spacing: 0.3em;
+  color:#ccc;
+}
+
+/*--------------------AJOUT PROJET------------------*/
+
+section#projet{
+  background:  white;
+  padding-top: 50px;
+  padding-bottom: 102px;
+  color: #636363;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+div.row{
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+form#projetForm{
+  margin-bottom: 30px;
+}
+
+#projet label{
+  font: 15px/24px 'opensans-bold', sans-serif;
+  letter-spacing: 0.3em;
+  margin: 12px 0;
+  color: rgb(85, 85, 85);
+  
+  float: left;
+  width: 15%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+input[type="text"]{
+  margin: 0 0 24px 0;
+  vertical-align: middle;
+  min-width: 225px;
+  max-width: 100%;
+}
+
+#projet input{
+  padding: 18px 20px;
+  color: #eee;
+  background: #373233;
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
+}
+
+#projet textarea{
+  padding: 18px 20px;
+  color: #eee;
+  background: #373233;
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
+  min-height: 220px;
+  vertical-align: middle;
+  min-width: 225px;
+  max-width: 100%;
+    
+}
+
+#projet button.submit{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.4em;
+  background: #0D0D0D;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 15%;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+
+}
+
+h2.projet-title{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 6px;
+  padding-top: 10px;
+  margin: 30px 0 80px 0;
+  letter-spacing: 0.3em;
+  color:rgb(87, 86, 86);
+}
+
+
+
+/* --------------------FOOTER --------------------*/
+
+section#footer{
+  background:#101010;
+  padding: 100px 0 100px 0;
+}
+
+
+div.copyright{
+  text-align: center;
+  font-size: 0.9em;
+letter-spacing: 0.2em;
+  color: #b3b2b2c4;
+  margin-top:100px;
+
+}
+
+ul.flex-row.footer-social{
+  list-style: none;
+  font-size: 2.5em;
   justify-content: space-evenly;
   align-items: center;
+ 
 }
 
 
 
-
-
-
-/* ------------FORMULAIRE ---------------*/
-
-section.flex-row.form{
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------- FOOTER ----------------*/
-
-.footer.footer.flex-column{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 /*------------ANIMATION-------------------*/
 
 .reveal{

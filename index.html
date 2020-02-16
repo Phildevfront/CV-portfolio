@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>PORTFOLIO</title>
+        
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/keyframes.css">
         <script src="assets/js/gallery.js"></script>
@@ -10,24 +11,31 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4af066ad9c.js" crossorigin="anonymous"></script>
         
         <!-------------     style    --------------------->   
     </head>
     <body>
-        <header class="header">
-            <!--<a href="#" class="logo"><img src="assets/images/logo-pb.jpg"></a>-->
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#aboutme">A PROPOS</a></li>
-              <li><a href="#expertise">COMPÉTENCES</a></li>
-              <li><a href="#xp">EDUCATION & EXPÉRIENCES</a></li>
-              <li><a herf="#works">MES TRAVAUX</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+        <nav>
+            <div class="logo">
+                <h4>PBAURENS</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </header>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        
+       
         <main>
         <!--------------- SECTION 1 BANNER----------------->
             <div id="home"></div>
@@ -43,22 +51,17 @@
                     <hr>
                     <ul class="flex-row banner-social">
                         <li>
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/philippe-baurens-aa44a06a/" class="linkedin" target="_blank">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://github.com/Phildevfront" class="github" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="mailto:pbaurens.dev@gmail.com" class="mail" target="_blank">
                                 <i class="fas fa-globe"></i>
                             </a>
                         </li>
@@ -66,11 +69,11 @@
                 </div>
             </section>
         <!--------------- SECTION 2 ABOUT ME----------------->
-            <div id="aboutme"></div>
+            <div id="apropos"></div>
             <section id="about">
                 <div class="bg-black row">
                     <div class="profile-img">
-                        <img class="profile-pic" src="../PORTFOLIO/assets/images/profile-pic-face.jpg">
+                        <img class="profile-pic" src="assets/images/profile img/PngItem_877270.png">
                     </div>
                     <div class="about text">
                         <h2>A propos</h2>
@@ -91,11 +94,12 @@
             </section>
             
         <!----------------- SECTION 3 EXPÉRIENCE ÉDUCATION COMPÉTENCES -------------->
-            
+        <div id="resume"></div>
             <section id="resume">
                 <div class="resume-img">
                     <img class="resume" src="assets/images/image3.jpg">
                     <div id="rectangle1"></div>
+                    <image class="code" src="assets/images/image4.jpg">
                 </div>
                 <div class="experience bg-white">
                     <div class="title">
@@ -228,9 +232,10 @@
                 </div> 
             </section>
             <!------------------------------ MY WORKS ---------------------------->
+            <div id="works"></div>
             <section class="flex-row works">
                 <div class="works-title">
-                    <h2 class="works-txt">MY WORKS</h2>
+                    <h2 class="works-txt">MES TRAVAUX</h2>
                 </div>
                 <div class="flex-row main-cards">
                     <div class="flip-card">
@@ -255,6 +260,7 @@
                             <div class="flip-card-back">
                                 <h2>ORSC</h2> 
                                 <p>Site Web pour un Cabinet de coaching</p> 
+                                <a class="card" href="https://orscprogram.com/" target="_blank"><span class="card-back">orscprogram.com</span></a>
                             </div>
                         </div>
                     </div>
@@ -267,6 +273,7 @@
                             <div class="flip-card-back">
                                 <h2>Visite de l'Alhambra</h2> 
                                 <p>Site démo</p> 
+                                <a class="card" href="http://pb-visitealhambra.planethoster.world" target="_blank"><span class="card-back">pb-visitealhambra.planethoster.world</span></a>
                             </div>
                         </div>
                     </div>
@@ -308,55 +315,93 @@
                 </div>
             </div>
             </section>
-            <!---------------------- CONTACT --------------------------------->
+            <!------------------------------- CONTACT --------------------------------->
+            <div id="contact"></div>
             <section id="contact">
-                <div class="flex-row head">
-                    <div class="icon-head">
-                        <a href="#"><i class="far fa-envelope fa-4x" ></i></a>
-                    </div>
-                    <div class="text-head">
-                        <p>Contactez moi</p>
-                    </div>
+                <div class="contact-text">
+                    <h2 class="contact-title">CONTACT</h2>
                 </div>
-                <div class="row form">
-                    <div class="eight column">
-                        <form action method="POST" id contact="contactForm" name="contactForm">
-                            <fieldset>
-                                <div>
-                                    <label for="contactName">Name<span class="required">*</span></label>
-                                    <input type="text" value size="35" id="ContactName" name="contactName">
-                                </div>
-                                <div>
-                                    <label for="contactName">Email<span class="required">*</span></label>
-                                    <input type="text" value size="35" id="ContactEmail" name="contactEmail">
-                                </div>
-                                <div>
-                                    <label for="contactName">Message<span class="required">*</span></label>
-                                    <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                                    
-                                </div>
-                                <div>
-                                    <button class="submit">Submit</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
+                <div class="row">
+                       <!-- form -->
+                    <form action="" method="post" id="contactForm" name="contactForm">
+                          <div>
+                            <label for="contactName">Nom</label>
+                            <input type="text" value="" size="35" id="contactName" name="contactName">
+                          </div>
+                          <div>
+                            <label for="contactEmail">Email</label>
+                            <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                          </div>
+                          <div>
+                            <label for="contactMessage">Message</label>
+                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                          </div>
+                          <div>
+                             <button class="submit">Soumettre</button>
+                          </div>
+                    </form> 
+                </div>   
+            </section>
+            <!--------------------------------AJOUT PROJET-------------------------------->
+            <section id="projet">
+                <div class="contact-text">
+                    <h2 class="projet-title">PROJET</h2>
+                </div>
+                <div class="row">
+                       <!-- form -->
+                    <form action="" method="post" id="contactForm" name="contactForm">
+                          <div>
+                            <label for="projetName">Nom</label>
+                            <input type="text" value="" size="35" id="contactName" name="contactName">
+                          </div>
+                          <div>
+                            <label for="projetSujet">Sujet</label>
+                            <input type="text" value="" size="35" id="sujet" name="contactEmail">
+                          </div>
+                          <div>
+                            <label for="projetDate">Date</label>
+                            <input type="date" id="start" name="trip-start"value="yyyy-mm-dd">
+                            </div>
+                          <div>
+                            <button class="submit">Soumettre</button>
+                          </div>
+                    </form> 
+                </div>   
+            </section>
+            <!-----------------------FOOTER---------------------------------------->
+            <footer>
+                <section id="footer">
+                <div class="social">
+                    <ul class="flex-row footer-social">
+                        <li>
+                            <a href="https://www.linkedin.com/in/philippe-baurens-aa44a06a/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Phildevfront" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:pbaurens.dev@gmail.com" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                <p>© Copyright 2020 - PHILIPPE BAURENS</p>
                 </div>
             </section>
+            </footer>
         </main>
-        <footer class="footer flex-column">
-            <div class="container text-center"><a class="" href="https://www.linkedin.com/in/philippe-baurens-aa44a06a/" target="_blank" title="Follow me on Linkedin"><i class="fab fa-linkedin-in"></i></i></a></div>
-            <div class="h4 title text-center">Philippe Baurens-My Portfolio</div>
-            <div class="text-center text-muted">
-              <p>&copy; Philippe Baurens All rights reserved.<br></p>
-            </div>
-        </footer>
         <!--<script src="js/core/jquery.3.2.1.min.js"></script>
         <script src="js/core/popper.min.js"></script>
         <script src="js/core/bootstrap.min.js"></script>
         <script src="js/now-ui-kit.js?v=1.1.0"></script>
         <script src="js/aos.js"></script>-->
+        <script src="assets/js/navbar.js"></script>
         <script src="assets/js/main.js"></script>    
-        
     </body>
 </html>
