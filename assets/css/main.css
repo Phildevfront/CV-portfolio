@@ -1,5 +1,5 @@
 /*RESET*/
-/**{margin:0;padding:0}*/
+*{margin:0;padding:0}
 header{justify-content: space-between}
 header nav ul li, header h1 {margin: 20px;}
 
@@ -18,119 +18,128 @@ body{
     width: 100%;
 }
 
-/*---------- NAVBAR ----------------*/
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: teal;
-  font-family: 'Poppins', sans-serif;
+/*------------------------ HEADER NAV -----------------------*/
+
+/* NAV-BAR RESPONSIVE HAMBBURGER MENU */
+
+
+a {
+  font-size: 0.8em;
+  color: #fff;
 }
 
-.logo{
-  color: rgb(228, 228, 228);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+/* header */
+
+.header {
+  background-color: #373c3f;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
-.nav-links{
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-}
-.nav-links li{
+.header ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-
+  overflow: hidden;
+  background-color: #373c3f;
 }
 
-.nav-links a{
-  color: rgb(228, 228, 228);
+.header li a {
+  display: block;
+  padding: 20px 20px;
   text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
 }
 
-.burger{
-  display: none;
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #616365;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
   cursor: pointer;
+  display: inline-block;
+  float:right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
 }
 
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color:rgb(225, 225, 225);
-  margin: 5px;
-  transition: all 0.3s ease;
+.header .menu-icon .navicon {
+  background: rgb(255, 255, 255);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
 }
 
-@media screen and (max-width:1024px){
-  .nav-links{
-    width: 60%;
-  }
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background:  rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
 }
 
-@media screen and (max-width:768px){
-  body{
-    overflow-x: hidden;
-  }
-
-  .nav-links{
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: teal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li{
-    opacity: 1;
-  }
-  .burger{
-    display: block;
-  }
- 
-}
-.nav-active{
-  transform: translateX(0%);
+.header .menu-icon .navicon:before {
+  top: 5px;
 }
 
-@keyframes navLinksFade{
-  from{
-    opacity:0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px,7px);
-
+.header .menu-icon .navicon:after {
+  top: -5px;
 }
 
-.toggle .line2{
-  opacity: 0;
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
 }
 
-.toggle .line3{
-  transform: rotate(45deg) translate(-5px,-7px);
-  
+.header .menu-btn:checked ~ .menu {
+  max-height: 270px;
 }
 
- 
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
 
-/* --------END NAVBAR RESPONSIVE----------- */
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
 
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
 
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* END NAVBAR RESPONSIVE */
 
 
 /*------------------------------------ SECTION 1 BANNER LANDING ------------------------------------------------*/
@@ -149,16 +158,18 @@ section.flex-row.banner{
 h1.text-focus-in{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: 4rem;
   letter-spacing: 0.1em;
   text-shadow: 0px 5px 5px rgba(96, 96, 96, 0.8);
 }
 
-
-hr{
+div.separateur{
+ border-bottom: 1px solid rgb(120, 120, 120);
   margin-top: 20px;
   margin-bottom: 20px;
+
 }
+
 
 
 h3.banner{
@@ -300,6 +311,7 @@ div.download{
 
 a.button{
 background-color:#444;
+color:white;
 border-radius: 5px ;
 padding:12px 20px;
 text-decoration: none;
@@ -398,10 +410,10 @@ div.title h2{
 }
 
 
-h3.resume{
-padding-top: 60px;
+h3.resume-tools{
+margin-top: 50px;
 letter-spacing: 2px;
-font-size: 1.5em;
+font-size: 1.2em;
 font-weight: bold;
 color: #313131;
 
@@ -646,6 +658,7 @@ div.flip-card-back p {
   padding-top: 20px;
 }
 span.card-back{
+ 
   font-size: 1.1em;
   letter-spacing: 0.2em;
   position: relative;
@@ -654,6 +667,7 @@ span.card-back{
 }
 
 a.card{
+  color:white;
   text-decoration: none;
 }
 a.card:hover{

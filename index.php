@@ -313,7 +313,6 @@
             </div>
             </section>
             <!------------------------------- CONTACT --------------------------------->
-            <div id="contact"></div>
             <section id="contact">
                 <div class="contact-text">
                     <h2 class="contact-title">CONTACT</h2>
@@ -339,32 +338,7 @@
                     </form> 
                 </div>   
             </section>
-           
-            <!--------------------------------AJOUT PROJET-------------------------------->
-        <!--<section id="projet">
-                <div class="contact-text">
-                    <h2 class="projet-title">PROJET</h2>
-                </div>
-                <div class="row">
-                    <form action="" method="post" id="contactForm" name="contactForm">
-                          <div>
-                            <label for="projetName">Nom</label>
-                            <input type="text" value="" size="35" id="contactName" name="contactName">
-                          </div>
-                          <div>
-                            <label for="projetSujet">Sujet</label>
-                            <input type="text" value="" size="35" id="sujet" name="contactEmail">
-                          </div>
-                          <div>
-                            <label for="projetDate">Date</label>
-                            <input type="date" id="start" name="trip-start"value="yyyy-mm-dd">
-                            </div>
-                          <div>
-                            <button class="submit">Soumettre</button>
-                          </div>
-                    </form> 
-                </div>   
-            </section>-->
+       
             <!-----------------------FOOTER---------------------------------------->
             <footer>
                 <section id="footer">
@@ -393,7 +367,6 @@
             </section>
             </footer>
         </main>
-      
         <script src="assets/js/navbar.js"></script>
         <script src="assets/js/main.js"></script>    
     </body>

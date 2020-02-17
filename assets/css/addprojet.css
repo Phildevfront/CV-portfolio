@@ -1,0 +1,133 @@
+/*RESET*/
+*{margin:0;padding:0}
+header{justify-content: space-between}
+header nav ul li, header h1 {margin: 20px;}
+
+/*CONTAINER*/
+.flex-row{display:flex;flex-direction:row; flex-wrap: wrap}
+.flex-column{display:flex;flex-direction:column;}
+
+
+.bg-white{background-color: white}
+.bg-gray{background-color: gray}
+.bg-black{background-color: #2B2B2B}
+
+
+body{
+    margin: 0px;
+    width: 100%;   
+}
+
+
+/*--------------------AJOUT PROJET------------------*/
+
+
+section#projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 102px;
+    color: #dfdfdfba;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-image: url("../images/projet/bg-img-projet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+  }
+  
+  div.row{
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  
+  form#projetForm{
+    margin-bottom: 30px;
+  }
+  
+  #projet label{
+    font: 15px/24px 'opensans-bold', sans-serif;
+    letter-spacing: 0.3em;
+    margin: 12px 0;
+    color: rgba(208, 206, 206, 0.653);
+    
+    float: left;
+    width: 15%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  
+  input[type="text"]{
+    margin: 0 0 24px 0;
+    vertical-align: middle;
+    min-width: 225px;
+    max-width: 100%;
+  }
+  
+  #projet input{
+    padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 65%;
+  }
+  
+  #projet textarea{
+    padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 65%;
+    min-height: 100px;
+    vertical-align: middle;
+    min-width: 225px;
+    max-width: 100%;
+      
+  }
+  
+  #projet button.submit{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    background: #0D0D0D;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 15%;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+  
+  }
+
+  #projet button.submit:hover{
+      color:brown;
+  }
+
+  
+  h2.projet-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    margin: 30px 0 80px 0;
+    letter-spacing: 0.3em;
+    color:rgba(218, 217, 217, 0.721);
+  }
