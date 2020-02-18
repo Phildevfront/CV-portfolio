@@ -5,14 +5,16 @@
     $user = "root";
     $pass = "root";
 
+    $entreprise = $_POST["entreprise"];
     $prenom = $_POST["prenom"];
     $nom = $_POST["nom"];
     $date = $_POST["date"];
     $sujet = $_POST["sujet"];
     $description = $_POST["description"];
+    $logo = $_POST["logo"];
 
     
-    $emailTo = "pbaurens.dev@gmail.com";
+    
     
     try{
         //On se connecte à la BDD
@@ -21,13 +23,15 @@
     
         //On insère les données reçues
         $sth = $dbco->prepare("
-            INSERT INTO projet(prenom, nom, date, sujet, description)
-            VALUES(:prenom, :nom, :date, :sujet, :description)");
+            INSERT INTO clients(entreprise, prenom, nom, date, sujet, description, logo)
+            VALUES(:entreprise, :prenom, :nom, :date, :sujet, :description, :logo)");
+        $sth->bindParam(':entreprise',$entreprise);
         $sth->bindParam(':prenom',$prenom);
         $sth->bindParam(':nom',$nom);
         $sth->bindParam(':date',$date);
         $sth->bindParam(':sujet',$sujet);
         $sth->bindParam(':description',$description);
+        $sth->bindParam(':logo',$logo);
 
 
         $sth->execute();

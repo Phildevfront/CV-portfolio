@@ -1,7 +1,8 @@
 /*RESET*/
 *{margin:0;padding:0}
+* {scroll-behavior: smooth;}
 header{justify-content: space-between}
-header nav ul li, header h1 {margin: 20px;}
+/*header nav ul li, header h1 {margin: 20px;}
 
 /*CONTAINER*/
 .flex-row{display:flex;flex-direction:row; flex-wrap: wrap}
@@ -54,7 +55,8 @@ a {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #616365;
+ /* background-color: #616365;*/
+ background-color: darkcyan;
 }
 
 .header .logo {
@@ -78,7 +80,7 @@ a {
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
+  /*display: inline-block;*/
   float:right;
   padding: 28px 20px;
   position: relative;
@@ -163,9 +165,10 @@ h1.text-focus-in{
   text-shadow: 0px 5px 5px rgba(96, 96, 96, 0.8);
 }
 
+
 div.separateur{
- border-bottom: 1px solid rgb(120, 120, 120);
-  margin-top: 20px;
+  border-bottom: 1px solid rgba(70, 70, 70, 0.612);
+  margin-top: 30px;
   margin-bottom: 20px;
 
 }
@@ -178,6 +181,7 @@ h3.banner{
   text-align:center;
   letter-spacing: 0.1rem;
   line-height: 30px;
+  margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1em;
@@ -213,15 +217,25 @@ i.fab.fa-linkedin-in{
   color:rgba(140, 140, 140, 0.899);
 }
 
+i.fab.fa-linkedin-in:hover{
+  color:#11ABB0;
+}
 
 
 i.fab.fa-github{
   color:rgba(140, 140, 140, 0.899);
 }
 
+i.fab.fa-github:hover{
+  color:#11ABB0;
+}
 
-i.fas.fa-globe{
-  color:rgba(140, 140, 140, 0.899);
+i.fas.fa-envelope-square{
+  color:rgba(14, 14, 14, 0.899);
+}
+
+i.fas.fa-envelope:hover{
+  color:#11ABB0;
 }
 
 a.scroll{
@@ -236,7 +250,7 @@ a.linkedin.github.mail:hover{
 }
 
 
-/*---------------------------------- SECTION 2 ABOUT ME --------------------------------------------*/
+/*---------------------------------- SECTION 2 A PROPOS --------------------------------------------*/
 
 section#about{
   background-color: rgb(43, 43, 43);
@@ -276,13 +290,14 @@ img{
 }
 
 div.about.text{
-  
   background-color: rgba(13, 69, 152, 0.356);
   border-radius: 5px;
   padding: 20px;
   min-height: 1px; 
   display: flex;
   flex-direction: column;
+  position: relative;
+  left: 20px;
 
 }
 #about h2{
@@ -312,10 +327,14 @@ div.download{
 a.button{
 background-color:#444;
 color:white;
+font-weight: bold;
+letter-spacing: 0.4em;
 border-radius: 5px ;
 padding:12px 20px;
 text-decoration: none;
 }
+
+
 a.button:hover{
   color: #11ABB0;
   cursor: pointer;
@@ -346,34 +365,36 @@ div.resume-img{
 
 }
 
+
+
 img.resume{
-  width: 40%;
+  width: 35%;
   z-index: 1;
   position: relative;
   left: 50px;
-  bottom: 50px;
+  bottom: 20px;
 }
 
 img.code{
-  width: 20%;
+  width: 15%;
   z-index: 2;
   position: relative;
   right: 100px;
   top:100px
 }
 
-#rectangle1{
-  width: 40vw;
-  height: 20vh;
-  background-color: darkgray;
+div#rectangle1{
+  width: 30vw;
+  height: 10vh;
+  background-color: rgba(147, 120, 120, 0.447);
+  box-shadow: 10px 5px 5px black;
   opacity: 0.5;
   position: relative;
-  top: 180px;
+  top: 100px;
   right: 100px
   
   
 }
-
 
 section#resume{
   padding: 90px 0 0 0;
@@ -411,7 +432,6 @@ div.title h2{
 
 
 h3.resume-tools{
-margin-top: 50px;
 letter-spacing: 2px;
 font-size: 1.2em;
 font-weight: bold;
@@ -467,6 +487,7 @@ span.point{
   top: 5px;
 }
 
+
 div.competence.bg-white{
   display: flex;
   flex-direction: row;
@@ -475,15 +496,17 @@ div.competence.bg-white{
   margin-bottom: 48px;
   padding-bottom: 24px;
   padding-top: 48px;
-  border-bottom: 1px solid #E8E8E8;
+  
   width: 95%;
   max-width: 1020px;
   margin: 0 auto;
 }
 
+
 div.comp-title{
   margin-right: 130px;
 }
+
 
 div.comp-title h2{
   font-size: 1.2em;
@@ -496,6 +519,7 @@ div.comp-title h2{
 
 }
 
+
 .bars{
   width: 95%;
   float: left;
@@ -504,11 +528,13 @@ div.comp-title h2{
   margin-top: 20px;
 }
 
+
 ul.comp{
   margin-top: 36px;
   margin-bottom: 24px;
   list-style: none;
 }
+
 
 .bars li{
   position: relative;
@@ -517,6 +543,8 @@ ul.comp{
     height: 42px;
     border-radius: 3px;
 }
+
+
 span.bar-expand{
   position: absolute;
   left: 0;
@@ -530,6 +558,7 @@ span.bar-expand{
   border-radius: 3px 0 0 3px;
 }
 
+
 .bars li em{
   font: 15px 'opensans-bold', sans-serif;
   color: #313131;
@@ -539,9 +568,13 @@ span.bar-expand{
   position: relative;
   bottom: 36px;
 }
+
+
 div.comp-text{
   width: 95%;
 }
+
+
 p.comp-text{
   margin:20px 0 20px 0;
   font-size: 0.93em;
@@ -550,14 +583,15 @@ p.comp-text{
   color: #6E7881;
 }
 
-hr{
+hr.cut{
+  margin-bottom: 30px;
   width:100%
 }
 /* --------------------------------- MES TRAVAUX -----------------------*/
 
 section.flex-row.works{
   justify-content: center;
-  background-color:  rgba(80, 80, 80, 0.79);
+  background-color:  rgba(177, 177, 177, 0.166);
 }
 
 
@@ -579,7 +613,7 @@ h2.works-txt{
   padding-top: 80px;
   margin: 50px 0 50px 0;
   letter-spacing: 0.3em;
-  color:#ccc;
+  color:#313131;
   
 }
 
@@ -712,55 +746,58 @@ form#contactForm{
 input[type="text"]{
   margin: 0 0 24px 0;
   vertical-align: middle;
-    min-width: 225px;
-    max-width: 100%;
+  min-width: 225px;
+  max-width: 100%;
 }
 
 #contact input{
   padding: 18px 20px;
-    color: #eee;
-    background: #373233;
-    margin-bottom: 42px;
-    border: 0;
-    outline: none;
-    font-size: 15px;
-    line-height: 24px;
-    width: 65%;
+  color: #eee;
+  background: #373233;
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
 }
 
 #contact textarea{
   padding: 18px 20px;
-    color: #eee;
-    background: #373233;
-    margin-bottom: 42px;
-    border: 0;
-    outline: none;
-    font-size: 15px;
-    line-height: 24px;
-    width: 65%;
-    min-height: 220px;
-    vertical-align: middle;
-    min-width: 225px;
-    max-width: 100%;
+  color: #eee;
+  background: #373233;
+  margin-bottom: 42px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
+  min-height: 220px;
+  vertical-align: middle;
+  min-width: 225px;
+  max-width: 100%;
     
 }
 
 #contact button.submit{
   text-transform: uppercase;
-  letter-spacing: 3px;
   color: #fff;
   font-weight: bold;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.5em;
   background: #0D0D0D;
   border: none;
   cursor: pointer;
   height: auto;
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 6px;
   margin-left: 15%;
   padding: 12px 20px;
   margin-bottom: 18px;
+}
 
+#contact button.submit:hover{
+  color:#11ABB0;
+  cursor: pointer;
 }
 
 h2.contact-title{
@@ -775,6 +812,8 @@ h2.contact-title{
   letter-spacing: 0.3em;
   color:#ccc;
 }
+
+
 
 /*--------------------AJOUT PROJET------------------*/
 
@@ -886,21 +925,20 @@ section#footer{
 }
 
 
-div.copyright{
-  text-align: center;
-  font-size: 0.9em;
-letter-spacing: 0.2em;
-  color: #b3b2b2c4;
-  margin-top:100px;
-
-}
-
 ul.flex-row.footer-social{
   list-style: none;
   font-size: 2.5em;
   justify-content: space-evenly;
   align-items: center;
- 
+}
+
+
+div.copyright{
+  text-align: center;
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+  color: #b3b2b2c4;
+  margin-top:100px;
 }
 
 
@@ -942,6 +980,16 @@ ul.flex-row.footer-social{
         display: none;
     }
   }
+
+  @media (max-width:20em){
+    div.banner-text{
+        width: 100%;
+    }
+
+    h3.banner{
+        margin:10px;
+    }
+}
 
 
 

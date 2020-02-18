@@ -5,15 +5,15 @@
         <title>PORTFOLIO</title>
         
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/mediasqueries.css">
         <link rel="stylesheet" href="assets/css/keyframes.css">
-        <script src="assets/js/gallery.js"></script>
+        <!--<script src="assets/js/gallery.js"></script>-->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4af066ad9c.js" crossorigin="anonymous"></script>
-        
     </head>
     
     <body>
@@ -38,28 +38,27 @@
                 <div class="banner-text">
                     <h1 class="text-focus-in"> < Philippe Baurens /></h1>
                     <h3 class="banner"> 
-                        <p>Je suis actuellement en formation de <span class="banner">développeur web & mobile.</span></p>
+                        <p>Je suis actuellement en formation de <span class="banner">développeur web & mobile chez Simplon.</span></p>
                         <p>Passionné par les technologies digitales & audiovisuelles,<br> j'ai toujours désiré
                         faire carrière dans ces domaines.
                         <p>Je vous invite à <a class="scroll" href="#apropos"><span class="banner">découvrire mon profil.</span></a></p>
                     </h3>
                     <div class="separateur">
-                    <hr>
                     </div>
                     <ul class="flex-row banner-social">
                         <li>
                             <a href="https://www.linkedin.com/in/philippe-baurens-aa44a06a/" class="linkedin" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
+                            <span style="color:Grey;"><i class="fab fa-linkedin-in"></i></span>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/Phildevfront" class="github" target="_blank">
-                                <i class="fab fa-github"></i>
+                            <span style="color:Grey;"><i class="fab fa-github"></i></span>
                             </a>
                         </li>
                         <li>
                             <a href="mailto:pbaurens.dev@gmail.com" class="mail" target="_blank">
-                                <i class="fas fa-globe"></i>
+                            <span style="color:Grey;"><i class="fas fa-envelope"></i></span>
                             </a>
                         </li>
                     </ul>
@@ -76,9 +75,8 @@
                         <h2>A propos</h2>
                         <p><br>Passionné depuis longtemps par le monde numérique,
                             <br>j'ai toujours désiré faire carrière dans ce domaine.
-                            <br>Actuellement, je suis apprenant à la fabrique <br>SIMPLON SQY, en formation
-                            de développeur web et app mobile.<br>Je fais confiance à la Fabrique 
-                            de SIMPLON pour me former.
+                            <br>Actuellement, je suis apprenant à la fabrique <br>SIMPLON Élancourt SQY, en formation
+                            de développeur web et app mobile.
                         </p>
                     </div>
                     <div class="row download">
@@ -199,7 +197,7 @@
                                     <em>WORDPRESS</em>
                                 </li>
                             </ul>
-                            <hr>
+                            <hr class="cut">
                         </div>
                         <h3 class="resume-tools">Outils</h3>
                         <div class="bars">
@@ -274,43 +272,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h3>HTML5-CSS3</h3>
-                                <img src="assets/images/portfolio/Site-visiteAlhambra.jpg" alt="projet">
-                            </div>
-                            <div class="flip-card-back">
-                                <h2>Visite de l'Alhambra</h2> 
-                                <p>Site démo</p> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h3>CMS WORDPRESS</h3>
-                                <img src="assets/images/portfolio/site-orsc.jpg" alt="projet">
-                            </div>
-                            <div class="flip-card-back">
-                                <h2>ORSC</h2> 
-                                <p>Site Web pour un Cabinet de coaching</p> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h3>HTML5-CSS3</h3>
-                                <img src="assets/images/portfolio/Site-visiteAlhambra.jpg" alt="projet">
-                            </div>
-                            <div class="flip-card-back">
-                                <h2>Visite de l'Alhambra</h2> 
-                                <p>Site démo</p> 
-                            </div>
-                        </div>
                 </div>
-            </div>
+            </section>
+            <!------------------------------ WIP PROJECT ---------------------------------->
+            <section class="flex-row works">
+                <div class="works-title">
+                    <h2 class="works-txt">PROJETS EN COURS</h2>
+                </div>
+
+                <?php require('displayclient.php'); ?>
+
             </section>
             <!------------------------------- CONTACT --------------------------------->
             <section id="contact">
@@ -320,21 +291,21 @@
                 <div class="row">
                        <!-- form -->
                     <form action="traitement.php" method="post" name="form">
-                          <div>
-                            <label for="contactName">Nom</label>
-                            <input type="text" value="" size="35" name="nom">
-                          </div>
-                          <div>
-                            <label for="contactEmail">Email</label>
-                            <input type="text" value="" size="35" name="email">
-                          </div>
-                          <div>
-                            <label for="contactMessage">Message</label>
-                            <textarea cols="50" rows="15" name="message"></textarea>
-                          </div>
-                          <div>
-                             <button class="submit">Soumettre</button>
-                          </div>
+                        <div>
+                          <label for="contactName">Nom</label>
+                          <input type="text" value="" size="35" name="nom">
+                        </div>
+                        <div>
+                          <label for="contactEmail">Email</label>
+                          <input type="text" value="" size="35" name="email">
+                        </div>
+                        <div>
+                          <label for="contactMessage">Message</label>
+                          <textarea cols="50" rows="15" name="message"></textarea>
+                        </div>
+                        <div>
+                           <button class="submit">Soumettre</button>
+                        </div>
                     </form> 
                 </div>   
             </section>
@@ -346,17 +317,17 @@
                     <ul class="flex-row footer-social">
                         <li>
                             <a href="https://www.linkedin.com/in/philippe-baurens-aa44a06a/" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
+                            <span style="color:Grey;"><i class="fab fa-linkedin-in"></i></span>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/Phildevfront" target="_blank">
-                                <i class="fab fa-github"></i>
+                            <span style="color:Grey;"><i class="fab fa-github"></i></span>
                             </a>
                         </li>
                         <li>
                             <a href="mailto:pbaurens.dev@gmail.com" target="_blank">
-                                <i class="fas fa-globe"></i>
+                            <span style="color:Grey;"><i class="fas fa-envelope"></i></span>
                             </a>
                         </li>
                     </ul>
@@ -367,7 +338,6 @@
             </section>
             </footer>
         </main>
-        <script src="assets/js/navbar.js"></script>
-        <script src="assets/js/main.js"></script>    
+        <!--<script src="assets/js/main.js"></script>-->  
     </body>
 </html>
