@@ -4,11 +4,25 @@
     $dbname = "pbaurens";
     $user = "root";
     $pass = "root";
-    
-    $nom = $_POST["nom"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
 
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        $nom = verifyInput($_POST["nom"]);
+        $email = verifyInput($_POST["email"]);
+        $message = verifyInput($_POST["message"]);
+
+    }
+
+    function verifyInput($var)
+    {
+        $var = trim($var);
+        $var = stripslashes($var);
+        $var = htmlspecialchars($var);
+        return $var;
+
+    }
+    
+    
     
     $emailTo = "pbaurens.dev@gmail.com";
     

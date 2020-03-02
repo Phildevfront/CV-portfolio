@@ -67,7 +67,7 @@
         <!--------------- SECTION 2 ABOUT ME----------------->
             <div id="apropos"></div>
             <section id="about">
-                <div class="bg-black row">
+                <div class="about row">
                     <div class="profile-img">
                         <img class="profile-pic" src="assets/images/profile img/PngItem_877270.png">
                     </div>
@@ -75,8 +75,8 @@
                         <h2>A propos</h2>
                         <p><br>Passionné depuis longtemps par le monde numérique,
                             <br>j'ai toujours désiré faire carrière dans ce domaine.
-                            <br>Actuellement, je suis apprenant à la fabrique <br>SIMPLON Élancourt SQY, en formation
-                            de développeur web et app mobile.
+                            <br>Actuellement, je suis apprenant à la fabrique SIMPLON<br> Élancourt SQY, en formation
+                            de développeur web et <br>app mobile.
                         </p>
                     </div>
                     <div class="row download">
@@ -272,15 +272,52 @@
                             </div>
                         </div>
                     </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>WEB</h3>
+                                <img src="assets/images/portfolio/avenir.jpg" alt="projet">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>WIP</h2> 
+                                <p>Site WEB</p> 
+                                <a class="card" href="#" target="_blank"><span class="card-back"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>WEB</h3>
+                                <img src="assets/images/portfolio/avenir.jpg" alt="projet">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>WIP</h2> 
+                                <p>Site WEB</p> 
+                                <a class="card" href="#" target="_blank"><span class="card-back"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>WEB</h3>
+                                <img src="assets/images/portfolio/avenir.jpg" alt="projet">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>WIP</h2> 
+                                <p>Site WEB</p> 
+                                <a class="card" href="#" target="_blank"><span class="card-back"></span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!------------------------------ WIP PROJECT ---------------------------------->
-            <section class="flex-row works">
+            <section class="flex-column display">
                 <div class="works-title">
                     <h2 class="works-txt">PROJETS EN COURS</h2>
                 </div>
-
-                <?php require('displayclient.php'); ?>
 
             </section>
             <!------------------------------- CONTACT --------------------------------->
