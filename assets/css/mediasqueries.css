@@ -2,7 +2,7 @@
 
 /* 40em = 640px */
 
-@media (min-width: 40em) {
+@media  (min-width: 45em) {
     .header li {
       float: left;
     }
@@ -23,12 +23,102 @@
   }
 
 
-  @media (max-width:20em){
-      div.banner-text{
-          width: 100%;
-      }
+@media screen and (max-width: 720px){
+    div.about.row {
+      display: flex;
+      flex-direction: column;
+    }
+    section#resume {
+      display: flex;
+      flex-direction: column;
+    }
+}
 
-      h3.banner{
-          margin:10px;
-      }
+
+@media screen and (max-width: 720px){
+  div.resume-img.reveal.reveal-visible {
+    display: flex;
+    flex-direction: column;
   }
+  
+}
+
+
+@media screen and (max-width: 720px){
+  div.experience.bg-white.reveal.reveal-visible {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+}
+
+
+@media screen and (max-width: 720px){
+  div.education.bg-white.reveal.reveal-visible {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+}
+
+
+@media screen and (max-width: 720px){
+  div.competence.bg-white.reveal.reveal-visible {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+}
+
+
+@media screen and (max-width: 720px){
+  div.title {
+    margin-bottom: 40px;
+  }
+  div.comp-title{
+    margin-bottom: 40px;
+  }
+  
+}
+
+
+@media screen and (max-width: 720px){
+  div#rectangle1 {
+    display: none;
+  }
+
+  img.code {
+    display: none;
+  }
+  
+  img.resume{
+    width: 70%;
+    text-align: center;
+    position: static;
+  }
+  
+}
+
+
+@media screen and (max-width: 720px){
+  label{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px){
+  input{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 840px){
+  img.profile-pic{
+    margin-bottom: 40px;
+  }
+}

@@ -64,6 +64,13 @@
   animation: react 2s ease ;
 }
 
+.node{
+  width: 35%;
+  animation: node 2s ease;
+  -webkit-animation: node 2s ease;
+  animation: node 2s ease ;
+}
+
 .php{
   width: 40%;
   animation: php 2s ease;
@@ -118,6 +125,16 @@
   100% { width: 55%;  }
 }
 
+@keyframes node {
+  0%   { width: 0px;  }
+  100% { width: 35%;  }
+}
+
+@-webkit-keyframes node {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+
 @keyframes  php {
   0%   { width: 0px;  }
   100% { width: 40%;  }
@@ -155,7 +172,7 @@
 
 .git{
   width: 70%;
- animation: git 2s ease;
+  animation: git 2s ease;
   -webkit-animation: git 2s ease;
   animation: git 2s ease ;
 }

@@ -146,7 +146,24 @@ a {
 
 /*------------------------------------ SECTION 1 BANNER LANDING ------------------------------------------------*/
 
- 
+img.linksimplon{
+  display: inline-block;
+  width: 19%;
+  position: relative;
+  top: 22px;
+  cursor: pointer;
+  color: #777778;
+  
+} 
+
+
+
+img.linksimplon:hover{
+  background-color:#11ABB0;
+  border-radius: 10px;
+}
+
+
 section.flex-row.banner{
   width: 100%;
   height: 110vh;
@@ -160,7 +177,7 @@ section.flex-row.banner{
 h1.text-focus-in{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3.5rem;
   letter-spacing: 0.1em;
   text-shadow: 0px 5px 5px rgba(96, 96, 96, 0.8);
 }
@@ -193,6 +210,17 @@ span.banner{
   color: rgb(28, 95, 196);
   font-size: 1.1em;
 
+}
+
+span.banner:hover{
+  color:#11ABB0;
+}
+
+span.banner-title{
+  font-family: 'Libre Baskerville', serif;
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 
 div.banner-text{
@@ -254,7 +282,7 @@ a.linkedin.github.mail:hover{
 
 section#about{
   background-color: rgba(0, 0, 0, 0.76);
-  padding: 100px 0 30px 0;
+  padding: 30px 0 60px 0;
   overflow: hidden;
 }
 
@@ -268,6 +296,7 @@ div.about.row{
 div.profile-img{
   width: 30%;
   position: relative;
+  bottom: 50px;
   padding: 0 20px;
   min-height: 1px;
   float: left;
@@ -275,36 +304,74 @@ div.profile-img{
 
 img.profile-pic{
   position: relative;
+  top:120px;
+}
+/*img.profile-pic{
+  position: relative;
   right: 20px;
   top:40px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
   background: white;
-}
+}*/
+
+/*img.profile-pic{
+  position: relative;
+  overflow: hidden;
+  top:30px;
+  border-radius:90%;
+  width: 140px;
+  height: 140px;
+  right: 20px;
+  top:40px;
+
+}*/
 
 
-img{
-  max-width: 100%;
-  
-}
+/*img{
+  max-width: 100%;  
+}*/
+
 
 div.about.text{
   /*background-color: rgba(13, 69, 152, 0.356);*/
   border-radius: 5px;
   /*padding: 20px;*/
-  min-height: 1px; 
+  /*min-height: 1px; */
+  width: 430px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   left: 20px;
 
 }
 #about h2{
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(180, 180, 180, 0.345);
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  padding-top: 30px;
+  margin: 30px 0 30px 0;
+  letter-spacing: 0.9em;
+  border-bottom: 3px solid #11ABB0;
+  padding-bottom: 10px;
+  
+}
+
+h3.about-title{
+  display: flex;
+  justify-content: flex-start;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
-  font-weight: 700;
-  color: rgba(180, 180, 180, 0.345);
+  color: rgb(233, 233, 233);
+  letter-spacing: 0.1em;
+
 }
 
 #about p{
@@ -328,7 +395,7 @@ div.download{
 
 a.button{
 background-color:rgb(20, 20, 20);
-color:white;
+color:#ccc;
 font-weight: bold;
 letter-spacing: 0.4em;
 border-radius: 10px ;
@@ -357,7 +424,32 @@ img.img.deco{
 }
 
 
-/*------------ SECTION 3 EXPÉRIENCE ÉDUCATION COMPÉTENCES -----------*/
+/*------------ SECTION 3 RESUME (EXPÉRIENCE ÉDUCATION COMPÉTENCES) -----------*/
+
+
+.reveal [class*="reveal-"]{
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-visible [class*="reveal-"]{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s cubic-bezier(.26,.01,.73,1);
+}
+
+.reveal-visible .reveal-2 {
+  transition-delay: .6s;
+}
+
+.reveal-visible .reveal-3 {
+  transition-delay: .7s;
+}
+
+.reveal-visible .reveal-4 {
+  transition-delay: .8s;
+}
+
 
 
 div.resume-img{
@@ -375,7 +467,7 @@ img.resume{
   width: 35%;
   z-index: 1;
   position: relative;
-  left: 50px;
+  left: 130px;
   bottom: 20px;
 }
 
@@ -383,7 +475,7 @@ img.code{
   width: 15%;
   z-index: 2;
   position: relative;
-  right: 100px;
+  left: 250px;
   top:100px
 }
 
@@ -401,7 +493,7 @@ div#rectangle1{
 }
 
 section#resume{
-  padding: 90px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 div.experience.bg-white{
@@ -443,10 +535,19 @@ color: #313131;
 
 }
 
+p.location{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.93em;
+  line-height: 1.7em;
+  
+  letter-spacing: 1px;
+  color: #6E7881;
+}
+
 p.info{
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
-  margin: 0 0 18px 0;
+  margin: 0 0 10px 0;
   color: rgb(59, 61, 63);
   letter-spacing: 2px;
 }
@@ -591,11 +692,14 @@ hr.cut{
   margin-bottom: 30px;
   width:100%
 }
+
+
 /* --------------------------------- MES TRAVAUX -----------------------*/
 
 section.flex-row.works{
   justify-content: center;
   background-color:  rgba(216, 216, 216, 0.166);
+  padding-top: 50px;
 }
 
 
@@ -608,17 +712,25 @@ div.flex-row.main-cards{
 
 
 h2.works-txt{
+  /*color:#ccc;
   font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-bottom: 3px solid #11ABB0;
   padding-bottom: 6px;
-  padding-top: 80px;
   margin: 50px 0 50px 0;
-  letter-spacing: 0.3em;
-  color:#313131;
-  
+  letter-spacing: 0.3em;*/
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 6px;
+  padding-top: 30px;
+  margin: 30px 0 80px 0;
+  letter-spacing: 0.9em;
+  color:#ccc;
 }
 
 
@@ -713,27 +825,21 @@ a.card:hover{
   cursor: pointer;
 }
 /*------------------------ WIP PROJECT ------------------------------*/
+
 section.flex-column.display{
+  height: 90vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  background-image: url("../images/projet/bg-img-projet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
 }
 img.display{
   width: 30%;
 }
 
-h1.display{
-  font-size: 1.2em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color:#313131;
 
-
-}
-
-h4.display{
-
-}
 
 /* ----------------------- SECTION CONTACT -----------------------------*/
 
@@ -766,6 +872,7 @@ form#contactForm{
     width: 15%;
     vertical-align: baseline;
     background: transparent;
+    margin-right: 40px;
 }
 
 input[type="text"]{
@@ -809,13 +916,13 @@ input[type="text"]{
   color: #fff;
   font-weight: bold;
   letter-spacing: 0.5em;
-  background: #0D0D0D;
+  background: #373233;
   border: none;
   cursor: pointer;
   height: auto;
   display: inline-block;
   border-radius: 6px;
-  margin-left: 15%;
+  margin-left: 19%;
   padding: 12px 20px;
   margin-bottom: 18px;
 }
@@ -834,10 +941,22 @@ h2.contact-title{
   padding-bottom: 6px;
   padding-top: 10px;
   margin: 30px 0 80px 0;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.9em;
   color:#ccc;
 }
 
+.message{
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: lowercase;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 6px;
+  padding-top: 10px;
+  margin: 30px 0 40px 0;
+  letter-spacing: 0.3em;
+  color:#ccc;
+}
 
 
 /*--------------------AJOUT PROJET------------------*/
@@ -915,7 +1034,7 @@ input[type="text"]{
   color: #fff;
   font-weight: bold;
   letter-spacing: 0.4em;
-  background: #0D0D0D;
+  background: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
   height: auto;
