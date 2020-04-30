@@ -18,7 +18,7 @@
     </head>
     <body>
         <!-------------------------------------------- HEADER NAV --------------------------------------------------------------------->
-        <header class="header">
+        <header id="nav" class="header">
             <a href="#home" class="logo">Philippe Baurens</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -417,6 +417,7 @@
                 </section>
             </footer>
         </main>
+        <script type="text/javascript" src="assets/js/navbar.js"></script>
         <script type="text/javascript" src="assets/js/scroll.js"></script>
         <!--<script type="text/javascript" src="assets/js/main.js"></script>-->  
     </body>

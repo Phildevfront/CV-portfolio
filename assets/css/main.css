@@ -37,6 +37,18 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
+
+}
+
+#nav{
+
+  transition: top 0.3s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+#nav.header.hidden {
+  top: -80px;
+  
 }
 
 .header ul {
@@ -56,7 +68,7 @@ a {
 .header li a:hover,
 .header .menu-btn:hover {
  /* background-color: #616365;*/
- background-color: darkcyan;
+ background-color: #11ABB0;
 }
 
 .header .logo {
@@ -162,6 +174,8 @@ img.linksimplon:hover{
   background-color:#11ABB0;
   border-radius: 10px;
 }
+
+
 
 
 section.flex-row.banner{
@@ -727,7 +741,6 @@ h2.works-txt{
   text-align: center;
   letter-spacing: 2px;
   padding-bottom: 6px;
-  padding-top: 30px;
   margin: 30px 0 80px 0;
   letter-spacing: 0.9em;
   color:#ccc;
