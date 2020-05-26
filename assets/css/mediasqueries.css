@@ -23,7 +23,7 @@
   }
 
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 760px){
     div.about.row {
       display: flex;
       flex-direction: column;

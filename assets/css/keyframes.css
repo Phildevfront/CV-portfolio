@@ -33,6 +33,37 @@
 
 /*------ END EFFECT MAIN TITLE ------------*/ 
 
+#focusfx.profile-pic{
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes focusfx-profile-pic {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focusfx-profile-pic {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
 
 
 /*--------------------------------- KEYFRAMES COMPÉTENCES --------------------------*/
@@ -198,6 +229,13 @@
   animation: gatsby 2s ease ;
 }
 
+.docker{
+  width: 20%;
+  animation: gatby 2s ease;
+  -webkit-animation: gatsby 2s ease;
+  animation: gatsby 2s ease ;
+}
+
 @keyframes mac {
   0%   { width: 0px;  }
   100% { width: 90%;  }
@@ -256,5 +294,15 @@
 @-webkit-keyframes gatsby {
   0%   { width: 0px;  }
   100% { width: 20%; }
-} 
+}
+
+@keyframes docker {
+  0%   { width: 0px;  }
+  100% { width: 20%;  }
+}
+
+@-webkit-keyframes docker {
+  0%   { width: 0px;  }
+  100% { width: 20%; }
+}
   

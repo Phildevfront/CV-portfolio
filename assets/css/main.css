@@ -171,8 +171,10 @@ img.linksimplon{
 
 
 img.linksimplon:hover{
-  background-color:#11ABB0;
-  border-radius: 10px;
+  
+  background-color:rgba(17, 171, 176, 0.733);
+  border-radius: 5px;
+  
 }
 
 
@@ -184,6 +186,7 @@ section.flex-row.banner{
   background-image: url("../images/bg-image-landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
 }
@@ -294,6 +297,7 @@ a.linkedin.github.mail:hover{
 
 /*---------------------------------- SECTION 2 A PROPOS --------------------------------------------*/
 
+
 section#about{
   background-color: rgba(0, 0, 0, 0.76);
   padding: 30px 0 60px 0;
@@ -319,41 +323,13 @@ div.profile-img{
 img.profile-pic{
   position: relative;
   top:120px;
+  border-radius: 5px;
 }
-/*img.profile-pic{
-  position: relative;
-  right: 20px;
-  top:40px;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  background: white;
-}*/
 
-/*img.profile-pic{
-  position: relative;
-  overflow: hidden;
-  top:30px;
-  border-radius:90%;
-  width: 140px;
-  height: 140px;
-  right: 20px;
-  top:40px;
-
-}*/
-
-
-/*img{
-  max-width: 100%;  
-}*/
 
 
 div.about.text{
-  /*background-color: rgba(13, 69, 152, 0.356);*/
   border-radius: 5px;
-  /*padding: 20px;*/
-  /*min-height: 1px; */
-  width: 430px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -726,15 +702,6 @@ div.flex-row.main-cards{
 
 
 h2.works-txt{
-  /*color:#ccc;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-bottom: 3px solid #11ABB0;
-  padding-bottom: 6px;
-  margin: 50px 0 50px 0;
-  letter-spacing: 0.3em;*/
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
@@ -969,6 +936,12 @@ h2.contact-title{
   margin: 30px 0 40px 0;
   letter-spacing: 0.3em;
   color:#ccc;
+}
+
+.thanks{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color:white;
 }
 
 

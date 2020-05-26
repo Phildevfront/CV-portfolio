@@ -36,10 +36,10 @@
                 <div class="banner-text">
                     <h1 class="text-focus-in"> &#60; Philippe Baurens /&#62;</h1>
                     <h3 class="banner"> 
-                        <p>Je suis actuellement en formation de <span class="banner-title">développeur web & mobile</span><br /> chez <a href="https://simplon.co/" target="_blank"><img class="linksimplon" src="assets/images/logo/logo-simplon.png"></a>.</p><br />
+                        <p>Je suis actuellement en formation de <span class="banner-title">développeur web & web mobile</span><br /> chez <a href="https://simplon.co/" target="_blank"><img class="linksimplon" src="assets/images/logo/logo-simplon.png"></a>.</p><br />
                         <p>Passionné par les technologies digitales & audiovisuelles,<br> j'ai toujours désiré
                         faire carrière dans ces domaines.</p>
-                        <p>Je vous invite à <a class="scroll" href="#apropos"><span class="banner">découvrire mon profil.</span></a></p>
+                        <p>Je vous invite à <a class="scroll" href="#apropos"><span class="banner">découvrir mon profil.</span></a></p>
                     </h3>
                     <div class="separateur">
                     </div>
@@ -67,22 +67,22 @@
             <section id="about">
                 <div class="about row">
                     <div class="profile-img">
-                        <img class="profile-pic" src="assets/images/photo-face.jpg">
+                        <img id="focusfx" class="profile-pic" src="assets/images/photo-face.png">
+                       
                     </div>
                     <div class="about text">
                         <h2 class="about">A propos</h2>
                         <h3 class="about-title"> Créatif, Passionné & Motivé</h3>
                         <p><br>Passionné depuis longtemps par le monde numérique,
                             j'ai toujours désiré faire carrière dans ce domaine.
-                            <br>Actuellement, je suis apprenant à la fabrique SIMPLON<span>&#160;</span> Élancourt SQY, en formation
-                            de développeur web et app mobile.
+                            <br>Actuellement, je suis apprenant à la fabrique SIMPLON<span>&#160;</span> d'Élancourt, en formation
+                            de développeur web et mobile.<br />
+                            Créatif, motivé et d'un naturel curieux, j'aspire à apprendre tous les jours de nouvelles choses afin de monter en compétence rapidement.
                         </p>
-                        
                     </div>
                     <div class="row download">
                         <div class="download">
                             <p><a href="assets/cv/CV-PhilippeBaurens.pdf" class="button" target="_blank" download="CV-PhilippeBaurens.pdf"><i class="fa fa-download"></i>Téléchargez mon CV</a></p>
-                            
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                                 </p>
                                 <p class="text"><strong>DÉVELOPPER LE BACK-END D'UNE APPLICATION :</strong>  Créer une base de données.
                                     Développer les composants d’accès aux données.Élaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce.<br />
-                                    <strong>DÉVELOPPER LE FRONT-END D'UNEAPPLICATION :</strong> Maquetter une application.
+                                    <strong>DÉVELOPPER LE FRONT-END D'UNE APPLICATION :</strong> Maquetter une application.
                                     Réaliser une interface utilisateur web.Développer une interface utilisateur web dynamique.
                                     Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce.
                                 </p>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="comp-txt">
                         <h3 class="resume">Développement</h3>
-                        <p class="comp-text"> Voici le niveau de maîtrise des différents languages & outils que j'utilise.   
+                        <p class="comp-text"> Voici mon niveau de maîtrise des différents languages & outils que j'utilise.   
                         </p>
                         <div class="bars">
                             <ul class="comp">
@@ -264,6 +264,9 @@
                                 </li>
                                 <li><span class="bar-expand gatsby"></span>
                                     <em>GATSBY</em>
+                                </li>
+                                <li><span class="bar-expand docker"></span>
+                                    <em>DOCKER</em>
                                 </li>
                             </ul>
                         </div>
@@ -386,8 +389,10 @@
                         <div>
                            <button class="submit">Soumettre</button>
                         </div>
+                        <p class="thanks" style="display:<?php if($isSuccess) echo 'block'; else echo 'none';?>">Votre message a bien été envoyé.Merci de m'avoir contacté.</p>
                     </form> 
-                </div>   
+                </div>  
+               
             </section>
             <!-------------------------------------------------- FOOTER ---------------------------------------------------------->
             <footer>
