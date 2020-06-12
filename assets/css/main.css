@@ -17,6 +17,7 @@ header{justify-content: space-between}
 body{
     margin: 0px;
     width: 100%;
+    
 }
 
 /*------------------------ HEADER NAV -----------------------*/
@@ -53,7 +54,7 @@ a {
 
 .header ul {
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
   list-style: none;
   overflow: hidden;
   background-color: #373c3f;
@@ -216,9 +217,7 @@ h3.banner{
   letter-spacing: 0.1rem;
   line-height: 30px;
   margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 1em;
+  padding: 20px;
   color: #777778;
 
 }
@@ -956,8 +955,12 @@ section#projet{
   vertical-align: baseline;
 }
 
-div.row{
-  width: 96%;
+div.row-form{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   max-width: 1020px;
   margin: 0 auto;
 }

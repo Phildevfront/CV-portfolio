@@ -122,3 +122,81 @@
     margin-bottom: 40px;
   }
 }
+
+
+
+
+/*----------------------------HOME--------------------------------*/
+
+@media screen and (max-width:490px){
+
+  header#nav.header{
+    
+  }
+}
+
+  h1.text-focus-in{
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  h3.banner{
+    font-size: 0.9em;
+    letter-spacing: 0.1rem;
+    padding: 30px;
+  }
+
+
+  img.linksimplon{
+    width: 22%;
+    top: 13px;
+    
+  } 
+
+}
+
+/*---------------------------SECTION A PROPOS---------------------------*/
+
+@media screen and  (max-width:490px){
+
+  div.profile-img{
+    width: 50%;
+   left: 80px;
+    
+  }
+}
+
+
+/*----------------------------SECTION RESUME-----------------------------*/
+
+@media screen and  (max-width:490px){
+
+  section#resume{
+    padding: 50px 30px 40px 30px;
+  }
+
+}
+
+
+/*-----------------------------CONTACT-----------------------------------*/
+@media screen and  (max-width:490px){
+
+
+form{
+  padding: 40px;
+}
+  
+.message{
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: lowercase;
+  text-align: center;
+  padding-bottom: 6px;
+  padding-top: 10px;
+  margin: 30px 0 40px 0;
+  letter-spacing: 0.2em;
+  color:#ccc;
+}
+
+}

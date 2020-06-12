@@ -67,7 +67,7 @@
             <section id="about">
                 <div class="about row">
                     <div class="profile-img">
-                        <img id="focusfx" class="profile-pic" src="assets/images/photo-face.png">
+                        <img id="focusfx" class="profile-pic" src="assets/images/photo-face-NB.jpg">
                        
                     </div>
                     <div class="about text">
@@ -229,13 +229,13 @@
                                     <em>JAVASCRIPT</em>
                                 </li>
                                 <li><span class="bar-expand react"></span>
-                                    <em>REACT JS</em>
+                                    <em>REACT Native</em>
                                 </li>
                                 <li><span class="bar-expand node"></span>
                                     <em>NODE JS</em>
                                 </li>
                                 <li><span class="bar-expand php"></span>
-                                    <em>PHP</em>
+                                    <em>PHP Laravel</em>
                                 </li>
                                 <li><span class="bar-expand cms"></span>
                                     <em>WORDPRESS</em>
@@ -371,7 +371,7 @@
                     <h2 class="contact-title">CONTACT</h2>
                     <p class="message">N'hésitez pas à m'envoyer un message</p>
                 </div>
-                <div class="row">
+                <div class="row-form">
                        <!-- form -->
                     <form action="traitement.php" method="post" name="form">
                         <div>
