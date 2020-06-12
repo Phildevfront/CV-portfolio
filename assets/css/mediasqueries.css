@@ -124,25 +124,19 @@
 }
 
 
-
-
 /*----------------------------HOME--------------------------------*/
 
 @media screen and (max-width:490px){
-
-  
-}
-
   h1.text-focus-in{
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 15px;
   }
 
   h3.banner{
-    font-size: 0.9em;
+    font-size: 0.7em;
     letter-spacing: 0.1rem;
-    padding: 30px;
+    padding: 50px;
   }
 
 
@@ -151,8 +145,12 @@
     top: 13px;
     
   } 
-
+  
 }
+
+  
+
+
 
 /*---------------------------SECTION A PROPOS---------------------------*/
 
@@ -183,7 +181,7 @@
 
 form{
   padding: 40px;
-}
+  }
   
 .message{
   font-size: 0.75em;
@@ -195,6 +193,6 @@ form{
   margin: 30px 0 40px 0;
   letter-spacing: 0.2em;
   color:#ccc;
-}
+  }
 
 }
