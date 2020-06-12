@@ -15,7 +15,7 @@
       max-height: none;
     }
     .header .menu-icon {
-      display: none;
+      display: block;
     }
     .header .logo{
         display: none;
@@ -130,9 +130,7 @@
 
 @media screen and (max-width:490px){
 
-  header#nav.header{
-    
-  }
+  
 }
 
   h1.text-focus-in{
