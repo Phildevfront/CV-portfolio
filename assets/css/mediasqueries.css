@@ -15,7 +15,7 @@
       max-height: none;
     }
     .header .menu-icon {
-      display: block;
+      display: none;
     }
     .header .logo{
         display: none;
