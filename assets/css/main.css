@@ -184,7 +184,7 @@ img.linksimplon:hover{
 
 section.flex-row.banner{
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: url("../images/bg-image-landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
