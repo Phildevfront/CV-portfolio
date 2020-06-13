@@ -82,7 +82,7 @@
                     </div>
                     <div class="row download">
                         <div class="download">
-                            <p><a href="assets/cv/CV-PhilippeBaurens.pdf" class="button" target="_blank" download="CV-PhilippeBaurens.pdf"><i class="fa fa-download"></i>Téléchargez mon CV</a></p>
+                            <p><a href="assets/cv/CV-PhilippeBAURENS.pdf" class="button" target="_blank" download="CV-PhilippeBAURENS.pdf"><i class="fa fa-download"></i>Téléchargez mon CV</a></p>
                         </div>
                     </div>
                 </div>
