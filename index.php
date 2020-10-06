@@ -36,7 +36,9 @@
                 <div class="banner-text">
                     <h1 class="text-focus-in"> &#60; Philippe Baurens /&#62;</h1>
                     <h3 class="banner"> 
-                        <p>Je suis actuellement en formation de <span class="banner-title">développeur web & web mobile</span><br /> chez <a href="https://simplon.co/" target="_blank"><img class="linksimplon" src="assets/images/logo/logo-simplon.png"></a>.</p><br />
+                        <p>Je viens d'achever ma formation de <span class="banner-title">développeur web & web mobile</span><br /> chez <a href="https://simplon.co/" target="_blank"><img class="linksimplon" src="assets/images/logo/logo-simplon.png"></a>.</p><br />
+                        <p>Je souhaite poursuivre mon apprentissage par un cursus de concepteur développeur d'application.</p>
+                        <p>Je recherche activement un contrat de professionnalisation en alternance.</p>
                         <p>Passionné par les technologies digitales & audiovisuelles,<br> j'ai toujours désiré
                         faire carrière dans ces domaines.</p>
                         <p>Je vous invite à <a class="scroll" href="#apropos"><span class="banner">découvrir mon profil.</span></a></p>
@@ -283,6 +285,19 @@
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3>HTML5-CSS3-JS</h3>
+                                <img src="assets/images/portfolio/LeninaC-projet.jpg" alt="projet">
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Lenina Crowne</h2> 
+                                <p>Site officiel du groupe</p> 
+                                <a class="card" href="https://www.leninacrowne.org" target="_blank"><span class="card-back">www.leninacrowne.org</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>HTML5-CSS3-JS</h3>
                                 <img src="assets/images/portfolio/Mon-Portfolio.jpg" alt="projet">
                             </div>
                             <div class="flip-card-back">
@@ -315,19 +330,6 @@
                                 <h2>Jessie Nottola</h2> 
                                 <p>Création et développement du site vitrine pour le photographe & réalisateur JESSIE NOTTOLA</p>
                                 <a class="card" href="https://www.jessienottola.com" target="_blank"><span class="card-back">www.jessienottola.com</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h3>HTML5-CSS3</h3>
-                                <img src="assets/images/portfolio/Site-visiteAlhambra.jpg" alt="projet">
-                            </div>
-                            <div class="flip-card-back">
-                                <h2>Visite de l'Alhambra</h2> 
-                                <p>Site démo</p> 
-                                <a class="card" href="http://pb-visitealhambra.planethoster.world" target="_blank"><span class="card-back">pb-visitealhambra.planethoster.world</span></a>
                             </div>
                         </div>
                     </div>

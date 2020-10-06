@@ -767,8 +767,7 @@ h2.works-txt{
   color: rgba(227, 228, 228, 0.605);
   transform: rotateY(180deg);
   padding: 10px;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
 }
 
 img{
@@ -787,19 +786,19 @@ div.flip-card-back p {
   letter-spacing: 0.2em;
   padding-top: 20px;
 }
+
 span.card-back{
- 
   font-size: 1.1em;
   letter-spacing: 0.2em;
   position: relative;
   top: 30px;
-  
 }
 
 a.card{
   color:white;
   text-decoration: none;
 }
+
 a.card:hover{
   color: #11ABB0;
   cursor: pointer;
